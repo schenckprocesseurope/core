@@ -31063,8 +31063,8 @@ MdKeyboardContainerComponent.decorators = [
       display: block;
       margin: 0 auto;
       max-width: 960px;
-      min-width: 568px;
-      padding: 14px 24px;
+      min-width: 200px;
+      padding: 5px 5px;
       -webkit-transform: translateY(100%);
               transform: translateY(100%); }
       @media screen and (-ms-high-contrast: active) {
@@ -32024,11 +32024,11 @@ class MdKeyboardKeyComponent {
     get cssClass() {
         const /** @type {?} */ classes = [];
         if (this.isClassKey) {
-            classes.push('mat-keyboard__key--modifier');
-            classes.push(`mat-keyboard__key--${KeyboardKeyClass[this.key]}`);
+            classes.push('mat-keyboard-key-modifier');
+            classes.push(`mat-keyboard-key-${KeyboardKeyClass[this.key]}`);
         }
         if (this.isDeadKey) {
-            classes.push('mat-keyboard__key--deadkey');
+            classes.push('mat-keyboard-key-deadkey');
         }
         return classes.join(' ');
     }
