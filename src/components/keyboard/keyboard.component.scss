@@ -1,10 +1,11 @@
 @import '~@angular/material/theming';
 
 $mat-typography-config: mat-typography-config();
-$mat-keyboard-button-distance: 8px !default;
+$mat-keyboard-button-distance: 8px;
 
 :host {
   display: flex;
+  position:static;
   font: {
     family: mat-font-family($mat-typography-config);
     size: mat-font-size($mat-typography-config, button);
